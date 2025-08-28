@@ -1,0 +1,140 @@
+.enq-div {
+    background-image: url(./img/tires-wallpaper.jpg);
+    background-size: cover;
+    margin-top: 5%;
+    padding: 5%;
+}
+
+.contactForm-1 {
+    width: 50%;
+    background-size: cover;
+    padding: 40px;
+    background: #fff;
+    margin: 0 25%;
+    
+}
+
+.contactForm-1 h2 {
+    color: #333;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 5%;
+}
+
+.contactForm-1 p {
+    margin-left: 5%;
+}
+
+.contactForm-1 form {
+    margin-bottom: 20%;
+}
+
+.contactForm-1 .inputBox {
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.contactForm-1 .inputBox input,
+.contactForm-1 .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm-1 .inputBox label {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    transition: 0.5s;
+    pointer-events: none;
+    color: #666;
+}
+
+.contactForm-1 .inputBox input:focus ~ label,
+.contactForm-1 .inputBox textarea:focus ~ label,
+.contactForm-1 .inputBox input:valid ~ label,
+.contactForm-1 .inputBox textarea:valid ~ label {
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #d40000;
+}
+
+.contactForm-1 .inputBox button {
+    width: 100px;
+    cursor: pointer;
+    background: #d40000;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    padding: 10px;
+}
+
+.contactForm-1 .inputBox button:hover {
+    background-color: black;
+    color: #d40000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.message {
+    display: none;
+}
+
+.messageAppear {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 11px;
+    letter-spacing: 0.2rem;
+    padding: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #d40000;
+    background-color: #000;
+    border-radius: 5px;
+}
+
+.load {
+    display: none;
+}
+
+.loader-1 {
+    border: 7px solid #000; 
+    border-top: 7px solid #d40000; 
+    background: url(./img/logo.jpeg);
+    background-size: cover;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin-left: 41%;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media screen and (max-width: 768px) {
+    .contactForm-1 {
+        width: 80%;
+        margin: 0 10%;
+    }
+    .contactForm-1 h2 {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .loader-1 {
+        margin-left: 50%;
+    }
+}

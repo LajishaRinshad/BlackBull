@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+}
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(./img/tires-wallpaper.jpg);
+    background-size: cover;
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.contact .content p {
+    font-weight: 300;
+    color: #fff;
+}
+
+.contact .container-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contact .container-div .contactinfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .container-div .contactinfo .box {
+    position: relative;
+    padding: 20px 0;
+}
+
+.contact .container-div .contactinfo .box .icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 50%;
+    color: #000;    
+}
+
+.contact .container-div .contactinfo .box .icon a {
+    color: #000;
+}
+
+.contact .container-div .contactinfo .box .icon a:hover {
+    color: #d40000;
+    font-size: 35px;
+}
+
+.contact .container-div .contactinfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    padding-left: 15px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+.contact .container-div .contactinfo .box .text h3 {
+    font-weight: 700;
+    color: #d40000;
+}
+
+.contact .container-div .contactForm {
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+
+.contact .container-div .contactForm h2 {
+    color: #333;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.contact .container-div .contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contact .container-div .contactForm .inputBox input,
+.contact .container-div .contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contact .container-div .contactForm .inputBox label {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    transition: 0.5s;
+    pointer-events: none;
+    color: #666;
+}
+
+.contact .container-div .contactForm .inputBox input:focus ~ label,
+.contact .container-div .contactForm .inputBox textarea:focus ~ label,
+.contact .container-div .contactForm .inputBox input:valid ~ label,
+.contact .container-div .contactForm .inputBox textarea:valid ~ label {
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #d40000;
+}
+
+.contact .container-div .contactForm .inputBox button {
+    width: 100px;
+    cursor: pointer;
+    background: #d40000;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    padding: 10px;
+}
+
+.contact .container-div .contactForm .inputBox button:hover {
+    background-color: black;
+    color: #d40000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.msg {
+    display: none;
+}
+
+.msgAppear {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    letter-spacing: 0.2rem;
+    /* width: 340px; */
+    padding: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #d40000;
+    background-color: #000;
+    border-radius: 5px;
+}
+
+.load {
+    display: none;
+}
+
+.loader {
+    border: 7px solid #000; 
+    border-top: 7px solid #d40000; 
+    background: url(./img/logo.jpeg);
+    background-size: cover;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin-left: 41%;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+@media (max-width: 1025px) {
+    .contact {
+        padding: 5%;
+    }
+    .contact .container-div {
+        flex-direction: column;
+    }
+    .contact .container-div .contactinfo {
+        padding: 0 30%;
+    }
+    .contact .container-div .contactinfo,
+    .contact .container-div .contactForm {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    .contact .container-div .contactForm h2 {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 650px) {
+    .contact .container-div .contactinfo {
+        padding: 0 1%;
+    }
+}

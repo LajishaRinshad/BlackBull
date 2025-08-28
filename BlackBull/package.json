@@ -1,0 +1,21 @@
+{
+  "name": "bbtyres-fullstack",
+  "version": "1.0.0",
+  "description": "BB Tyres - Full Stack Application",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm start",
+    "client": "cd frontend && npm run start:dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "test": "cd frontend && npm test"
+  },
+  "keywords": ["tyres", "react", "express", "fullstack"],
+  "author": "BB Tyres Team",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
+} 

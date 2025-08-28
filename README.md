@@ -138,10 +138,3 @@ bbtyres/
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📄 License
-
-This project is licensed under the ISC License.
-
-## 📞 Support
-
-For support, email contact@blackbulltyres.com 
